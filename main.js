@@ -28,7 +28,7 @@
   }
 
   function closeNav () {
-    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-expanded', 'true');
     menu.classList.remove('is-open');
     overlay.classList.remove('is-active');
     document.body.style.overflow = '';
