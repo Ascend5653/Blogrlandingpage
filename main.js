@@ -28,7 +28,7 @@
   }
 
   function closeNav () {
-    toggle.setAttribute('aria-expanded', 'true');
+    toggle.setAttribute('aria-expanded', 'false');
     menu.classList.remove('is-open');
     overlay.classList.remove('is-active');
     document.body.style.overflow = '';
@@ -90,7 +90,7 @@
 
   /* ---------- Scroll reveal ---------- */
   const revealEls = document.querySelectorAll(
-    '.feature, .future__illustration, .infra__content, .infra__phones, .open__illustration, .section__title'
+    '.reveal'
   );
 
   revealEls.forEach((el, i) => {
